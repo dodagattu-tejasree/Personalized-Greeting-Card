@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personalized Greeting Card</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h1>Create Your Greeting Card</h1>
+    <form id="greetingForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Enter recipient's name" required>
+      
+      <label for="message">Message:</label>
+      <textarea id="message" placeholder="Enter your message" required></textarea>
+      
+      <label for="occasion">Occasion:</label>
+      <input type="text" id="occasion" placeholder="e.g., Birthday, Anniversary" required>
+      
+      <button type="button" id="generateCard">Generate Card</button>
+    </form>
+  </div>
+
+  <div class="card-container" id="cardContainer">
+    <div class="card" id="greetingCard">
+      <h2 id="cardOccasion"></h2>
+      <p id="cardMessage"></p>
+      <h3 id="cardName"></h3>
+    </div>
+    <button id="downloadCard">Download Card</button>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
